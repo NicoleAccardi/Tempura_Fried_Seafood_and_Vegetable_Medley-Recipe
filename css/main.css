@@ -29,7 +29,8 @@ header{
 /* GENERAL MAIN CONTENT */
 
 main{
-	margin: 3rem;
+	margin-left: 6rem;
+	margin-right: 6rem;
 }
 
 h1{
@@ -101,8 +102,8 @@ p{
 }
 
 main img{
-	height: 550px;
-	width: 550px;
+	height: 500px;
+	width: 500px;
 	margin-top: 2rem;
 }
 
@@ -120,15 +121,36 @@ footer a{
 	color: white
 }
 
-div{
-	column-gap: 1.5rem;
+.inner{
+	float: right;
 }
+
+/* COLUMNS */
+
 .col-left{
-	columns: 1;
 	width: 50%;
+	float: left;
+}
+
+@media screen and (min-width: 40em){
+	.col-left{
+		width: 45%;
+		float: left;
+	}
 }
 
 .col-right{
-	columns: 1;
 	width: 50%;
+	float: right;
 }
+
+@media screen and (min-width: 40em){
+	.col-right{
+		width: 45%;
+		float: right;
+	}
+}		
+
+
+
+
