@@ -1,36 +1,34 @@
 /* GENERAL */
 
 body{
-	
+	background-image: url(../img/swirl.png);
 }
 
 /* HEADER */
 
 header{
-	padding: ;
-	background-color: ;
-}
-
-.logo h1{
-	text-align: left;
-	font-family: 'Garamond', Serif;
-	font-size: 2rem;
-	font-weight: 400;
-	font-style: italic;
-	letter-spacing: 1px;
-	color: #34333a;
-}
-
-.menu a{
-	color: ;
-	text-decoration: none;
-}
+	padding: 1rem;
+	background-color: #b40036;
+}	
 
 /* GENERAL MAIN CONTENT */
 
 main{
-	margin-left: 6rem;
-	margin-right: 6rem;
+	margin: 2rem;
+	padding: 2rem;
+	overflow: hidden;
+	background-color: white;
+}
+
+@media screen and (min-width: 50em){
+	main{
+		margin-top: 0;
+		margin-bottom: 6rem;
+		margin-left: 6rem;
+		margin-right: 6rem;
+		padding: 6rem;
+	}
+
 }
 
 h1{
@@ -39,8 +37,9 @@ h1{
 	font-weight: 400;
 	font-size: 3.25rem;
 	text-transform: ;
-	color: #b40036;
+	color: white;
 	letter-spacing: .25px;
+	margin-top: 2rem;
 	margin-bottom: .5rem;
 }
 
@@ -51,6 +50,8 @@ h2{
 	text-transform: uppercase;
 	color: #b40036;
 	letter-spacing: 1.25px;
+	margin-top: 0;
+	margin-bottom: .5rem;
 }
 
 h3{
@@ -59,6 +60,7 @@ h3{
 	font-weight: 300;
 	color: ;
 	letter-spacing: ;
+	margin-top: .5rem;
 	margin-bottom: .5rem;
 }
 
@@ -72,6 +74,7 @@ h4{
 	color: ;
 	letter-spacing: 2px;
 	margin-top: .75rem;
+	margin-bottom: 2rem;
 }
 
 main ul{
@@ -81,6 +84,7 @@ main ul{
 	font-size: ;
 	line-height: 2rem;
 	color: #19191a;
+	margin-bottom: 2rem;
 }
 
 main ol{
@@ -101,15 +105,41 @@ p{
 	color: #19191a;
 }
 
-main img{
-	height: 500px;
-	width: 500px;
-	margin-top: 2rem;
+
+/* COLUMNS */
+
+.top,.mid,.bottom{
+	overflow: hidden;
 }
+
+.picture img{
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 50em){
+	.picture,.overview,.ingredient{
+		width: 45%;
+		margin-right: 5%;
+		float: left;
+	}
+}
+	
+
+.Preparation{
+	width: 100%;
+	overflow: hidden;
+}
+
+/* FOOTER */
 
 footer{
 	background-color: #b40036;
 	padding: 2rem;
+}
+
+footer p{
 	text-align: center;
 	font-family: 'Open-Sans', Sans-serif;
 	font-weight: 300;
@@ -118,39 +148,8 @@ footer{
 }
 
 footer a{
-	color: white
+	color: white;
 }
-
-.inner{
-	float: right;
-}
-
-/* COLUMNS */
-
-.col-left{
-	width: 50%;
-	float: left;
-}
-
-@media screen and (min-width: 40em){
-	.col-left{
-		width: 45%;
-		float: left;
-	}
-}
-
-.col-right{
-	width: 50%;
-	float: right;
-}
-
-@media screen and (min-width: 40em){
-	.col-right{
-		width: 45%;
-		float: right;
-	}
-}		
-
 
 
 
